@@ -1,0 +1,28 @@
+\documentclass{letter}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\pagenumbering{gobble}
+\address{
+    \begin{template} .PromptString "sender_address_line1" "Enter sender address line 1: " -\end{template}
+    \\
+    \begin{template} .PromptString "sender_address_line2" "Enter sender address line 2: " -\end{template}
+    \\
+    \begin{template} .PromptString "sender_address_line3" "Enter sender address line 3: " -\end{template}
+    \\
+    \begin{template} .PromptString "sender_address_line4" "Enter sender address line 4: " -\end{template}
+}
+
+\begin{template} .SetOutputFilename "out/letter.tex" -\end{template}
+\begin{document}
+
+\begin{letter}{Sample letter}
+
+\opening{Dear Sir or Madam:}
+
+Some text.
+
+\closing{Yours sincerely \\
+	\fromname{John Doe}
+}
+\end{letter}
+\end{document}
