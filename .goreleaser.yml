@@ -30,3 +30,11 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+brews:
+  -
+    name: texlate
+    tap:
+      owner: SirRippovMaple
+      name: homebrew-tap
+    folder: Formula
+    license: "MIT"
