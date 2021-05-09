@@ -66,6 +66,14 @@ Args:
   <jsonfile>  previous answers
 ```
 
+Every template should include a call to `SetOutputFilename`. This function takes one parameter, which is the file name
+of the output file. The output filename should not contain an extension because texlate will append `.tex`, `.json` and
+`.pdf` to the this value for each of the output files that it generates. The output file name may contain path
+components and texlate will attempt to create any paths that don't already exist.
+
+If a template does not make any call to `SetOutputFilename`, then the resulting tex script will be written to stdout
+and pdf generation will not be attempted.
+
 # Writing templates
 
 A template for texlate is a LaTeX formatted file with portions delimited for the Goland templating engine.
@@ -108,6 +116,9 @@ This text only appears if you answered yes to both of the previous questions.
 # Contributing
 
 If you have an idea for texlate, use [this link](https://github.com/SirRippovMaple/texlate/issues/new?labels=enhancement).
+Since texlate is pre-release, many of the decisions that we've taken are subject to change and better suggestions
+for these are welcome to be logged as ideas. This includes the decision about delimiters, the behavior when
+`SetOutputFilename` is not called, improvements to documentation & messages, etc.
 
 If you want to report a bug, use [this link](https://github.com/SirRippovMaple/texlate/issues/new?labels=bug).
 
