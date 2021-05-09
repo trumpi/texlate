@@ -118,7 +118,7 @@ This text only appears if you answered yes to both of the previous questions.
 If you have an idea for texlate, use [this link](https://github.com/SirRippovMaple/texlate/issues/new?labels=enhancement).
 Since texlate is pre-release, many of the decisions that we've taken are subject to change and better suggestions
 for these are welcome to be logged as ideas. This includes the decision about delimiters, the behavior when
-`SetOutputFilename` is not called, improvements to documentation & messages, etc.
+`SetOutputFilename` is not called, improvements to documentation & messages, good example templates, etc.
 
 If you want to report a bug, use [this link](https://github.com/SirRippovMaple/texlate/issues/new?labels=bug).
 
